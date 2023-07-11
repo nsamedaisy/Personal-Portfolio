@@ -1,0 +1,195 @@
+body {
+  margin: auto;
+  padding: 0;
+  font-family: Poppins, serif;
+  background-color: #000000e5;
+  color: white;
+}
+
+.nav-sec {
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  background-color: black;
+  top: 0;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+
+}
+
+ul a {
+  text-decoration: none;
+  color: white;
+  padding-left: 25px;
+}
+
+.code {
+  padding-top: 18px;
+  color: green;
+  font-weight: 700;
+  font-size: 24px;
+  font-family: serif;
+}
+
+.container {
+  margin: 8% auto;
+  width: 70%;
+}
+
+#home,
+#about {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  padding-bottom: 100px;
+}
+
+.left,
+.right2 {
+  text-align: left;
+  font-size: 16px;
+  width: 50%;
+}
+
+.left h1 {
+  font-size: 40px;
+  font-family: serif;
+  font-weight: 900;
+}
+
+.right {
+  width: 50%;
+}
+
+.know-more {
+  padding: 6px 14px;
+  background-color: green;
+  color: white;
+  margin-top: 14px;
+  /* border-radius: 12px; */
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* #about-me */
+
+.about-me,
+.services {
+  text-align: center;
+  padding-bottom: 20px;
+  font-family: serif;
+}
+
+span {
+  color: green;
+  font-family: serif;
+}
+
+.right2 h3 {
+  font-size: 24px;
+  font-family: serif;
+  line-height: 1.5;
+}
+
+.right2 p {
+  line-height: 2;
+}
+
+.left2 {
+  width: 50%;
+}
+
+.wrap-btn {
+  margin-top: 40px;
+}
+
+.btn1 {
+  padding: 10px 25px;
+  background-color: green;
+  color: white;
+  font-size: 15px;
+  margin-right: 50px;
+  font-weight: 700;
+}
+
+.btn2 {
+  padding: 10px 35px;
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+}
+
+.wrap-us {
+  display: flex;
+  padding-top: 30px;
+  line-height: 2;
+  width: 100%;
+}
+
+.myservice {
+  width: 25%;
+  padding-right: 20px;
+  text-align: center;
+}
+
+.myservice img {
+  width: 40px;
+  height: 40px;
+}
+
+@media screen and (max-width: 770px) {
+  .container {
+    margin: 8% auto;
+    width: 95%;
+  }
+
+  #home,
+  #about {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left,
+  .right2 {
+    width: 100%;
+  }
+
+  .right {
+    width: 100%;
+  }
+
+  .know-more {
+    margin: 12px 0 34px 0;
+  }
+
+  .left2 {
+    width: 100%;
+  }
+
+  .wrap-btn {
+    display: flex;
+  }
+
+  .btn2 {
+    margin-top: 30px;
+  }
+
+  .wrap-us {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .myservice {
+    width: 95%;
+    padding-right: 0;
+  }
+
+}
