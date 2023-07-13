@@ -10,16 +10,16 @@ body {
   display: flex;
   justify-content: space-around;
   position: fixed;
-  height: 50px;
+  height: 60px;
   width: 100%;
-  background-color: black;
+  background-color: rgb(33, 32, 32);
+  box-shadow: green 0px 20px 20px -50px;
   top: 0;
 }
 
 ul {
   display: flex;
   list-style: none;
-
 }
 
 ul a {
@@ -28,17 +28,27 @@ ul a {
   padding-left: 25px;
 }
 
+ul a:hover {
+  color: green;
+}
+
 .code {
   padding-top: 18px;
   color: green;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 26px;
   font-family: serif;
 }
 
 .container {
   margin: 8% auto;
   width: 70%;
+  background:
+    linear-gradient(to bottom, #02430262, transparent 80%) top,
+    linear-gradient(to top, #0051005a, transparent 60%) bottom;
+  background-size: 100% 50%;
+  background-repeat: no-repeat;
+  border-radius: 10px;
 }
 
 #home,
@@ -49,31 +59,49 @@ ul a {
   padding-bottom: 100px;
 }
 
+#home {
+  height: 48vh;
+  padding: 30px 0 0 20px;
+}
+
+#about {
+  height: 45vh;
+  padding-top: 30px;
+}
+
+.left {
+  width: 60%;
+}
+
 .left,
 .right2 {
   text-align: left;
-  font-size: 16px;
-  width: 50%;
+  font-size: 18px;
 }
 
 .left h1 {
-  font-size: 40px;
+  font-size: 60px;
   font-family: serif;
   font-weight: 900;
 }
 
-.right {
-  width: 50%;
+.image {
+  height: 40vh;
+  width: 30vw;
+  margin-right: 20px;
 }
 
 .know-more {
-  padding: 6px 14px;
+  padding: 8px 18px;
   background-color: green;
   color: white;
   margin-top: 14px;
-  /* border-radius: 12px; */
   font-size: 14px;
   cursor: pointer;
+}
+
+.know-more:hover {
+  background-color: transparent;
 }
 
 /* #about-me */
@@ -81,8 +109,8 @@ ul a {
 .about-me,
 .services {
   text-align: center;
-  padding-bottom: 20px;
   font-family: serif;
+  padding-top: 70px;
 }
 
 span {
@@ -90,43 +118,64 @@ span {
   font-family: serif;
 }
 
+.right2 {
+  margin-top: -15px;
+}
+
+.image2 {
+  height: 58vh;
+  margin-left: 50px;
+  width: 30vw;
+}
+
 .right2 h3 {
-  font-size: 24px;
+  font-size: 28px;
   font-family: serif;
   line-height: 1.5;
 }
 
 .right2 p {
-  line-height: 2;
+  line-height: 2.5;
+  font-size: 18px;
 }
 
 .left2 {
-  width: 50%;
+  width: 45%;
 }
 
 .wrap-btn {
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 .btn1 {
-  padding: 10px 25px;
+  padding: 14px 28px;
   background-color: green;
   color: white;
   font-size: 15px;
-  margin-right: 50px;
+  margin-right: 55px;
+  cursor: pointer;
   font-weight: 700;
 }
 
+.btn1:hover {
+  background-color: transparent;
+}
+
 .btn2 {
-  padding: 10px 35px;
+  padding: 10px 38px;
   background-color: transparent;
   color: white;
   font-size: 16px;
+  cursor: pointer;
+}
+
+.btn2:hover {
+  background-color: green;
 }
 
 .wrap-us {
   display: flex;
-  padding-top: 30px;
+  padding: 35px 10px;
   line-height: 2;
   width: 100%;
 }
