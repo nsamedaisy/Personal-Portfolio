@@ -44,7 +44,7 @@ ul a:hover {
   margin: 8% auto;
   width: 70%;
   background:
-    linear-gradient(to bottom, #02430262, transparent 80%) top,
+    linear-gradient(to bottom, #02430234, transparent 70%) top,
     linear-gradient(to top, #0051005a, transparent 60%) bottom;
   background-size: 100% 50%;
   background-repeat: no-repeat;
@@ -110,7 +110,7 @@ ul a:hover {
 .services {
   text-align: center;
   font-family: serif;
-  padding-top: 70px;
+  padding-top: 80px;
 }
 
 span {
@@ -123,7 +123,7 @@ span {
 }
 
 .image2 {
-  height: 58vh;
+  height: 62vh;
   margin-left: 50px;
   width: 30vw;
 }
@@ -148,7 +148,7 @@ span {
 }
 
 .btn1 {
-  padding: 14px 28px;
+  padding: 12px 25px;
   background-color: green;
   color: white;
   font-size: 15px;
@@ -173,6 +173,10 @@ span {
   background-color: green;
 }
 
+#services {
+  padding-top: 30px;
+}
+
 .wrap-us {
   display: flex;
   padding: 35px 10px;
@@ -195,6 +199,9 @@ span {
   .container {
     margin: 8% auto;
     width: 95%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
   #home,
@@ -206,9 +213,19 @@ span {
     align-items: center;
   }
 
+  .about-me {
+    margin-top: 60px;
+  }
+
   .left,
   .right2 {
     width: 100%;
+  }
+
+  .left h1 {
+    font-size: 26px;
+    font-family: serif;
+    font-weight: 900;
   }
 
   .right {
@@ -223,8 +240,21 @@ span {
     width: 100%;
   }
 
+  .image {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .image2 {
+    margin-left: 50px;
+    width: 100%;
+    margin-top: 90%;
+  }
+
   .wrap-btn {
     display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .btn2 {
@@ -234,6 +264,11 @@ span {
   .wrap-us {
     display: flex;
     flex-direction: column;
+    align-items: center;
+  }
+
+  #services {
+    margin-top: 70%;
   }
 
   .myservice {
