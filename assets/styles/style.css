@@ -64,15 +64,6 @@ ul a:hover {
   padding: 30px 0 0 20px;
 }
 
-#about {
-  height: 45vh;
-  padding-top: 30px;
-}
-
-.left {
-  width: 60%;
-}
-
 .left,
 .right2 {
   text-align: left;
@@ -87,8 +78,8 @@ ul a:hover {
 
 .image {
   height: 40vh;
-  width: 30vw;
-  margin-right: 20px;
+  /* width: 30vw; */
+  /* margin-right: 20px; */
 }
 
 .know-more {
@@ -105,6 +96,11 @@ ul a:hover {
 }
 
 /* #about-me */
+
+#about {
+  height: 45vh;
+  padding-top: 30px;
+}
 
 .about-me,
 .services {
@@ -123,7 +119,7 @@ span {
 }
 
 .image2 {
-  height: 62vh;
+  height: 50vh;
   margin-left: 50px;
   width: 30vw;
 }
@@ -196,9 +192,15 @@ span {
 }
 
 @media screen and (max-width: 770px) {
+
+  .nav-sec {
+    display: none;
+  }
+
   .container {
-    margin: 8% auto;
-    width: 95%;
+    margin: auto;
+    width: 99%;
+    padding: 15px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -206,20 +208,36 @@ span {
 
   #home,
   #about {
+    height: 10%;
     display: flex;
-    width: 100%;
+    width: 92%;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin: auto;
+  }
+
+  .know-more {
+    margin: 12px 0 34px 0;
+  }
+
+  .image {
+    display: none;
   }
 
   .about-me {
-    margin-top: 60px;
+    padding-top: 0;
   }
 
   .left,
   .right2 {
-    width: 100%;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .image2 {
+    width: 94%;
+    margin: 0;
   }
 
   .left h1 {
@@ -228,37 +246,22 @@ span {
     font-weight: 900;
   }
 
-  .right {
-    width: 100%;
-  }
-
-  .know-more {
-    margin: 12px 0 34px 0;
-  }
-
   .left2 {
-    width: 100%;
-  }
-
-  .image {
-    width: 100%;
-    margin-bottom: 50px;
-  }
-
-  .image2 {
-    margin-left: 50px;
-    width: 100%;
-    margin-top: 90%;
+    width: 94%;
+    margin: auto;
   }
 
   .wrap-btn {
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
+    width: 70%;
+    margin: auto;
   }
 
   .btn2 {
-    margin-top: 30px;
+    margin-top: 10px;
   }
 
   .wrap-us {
@@ -267,13 +270,13 @@ span {
     align-items: center;
   }
 
-  #services {
-    margin-top: 70%;
+  #services,
+  .services {
+    padding-top: 0;
   }
 
   .myservice {
-    width: 95%;
+    width: 70%;
     padding-right: 0;
   }
-
 }
